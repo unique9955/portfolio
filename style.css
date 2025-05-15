@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .navbar {
+    background: #00bcd4;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 10px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .skills-list li {
+    background: #eee;
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
+  
+  .project {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  form button {
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark header,
+  body.dark .navbar {
+    background: #1e1e1e;
+  }
+  
+  body.dark .project {
+    background: #2a2a2a;
+  }
+  
+  body.dark form input,
+  body.dark form textarea {
+    background: #1c1c1c;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
